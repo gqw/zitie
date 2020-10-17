@@ -1,0 +1,140 @@
+    @font-face {
+        font-family: 'hy-py';
+        src: url('../img/py.ttf') format('truetype');
+    }
+
+    body,
+    div,
+    p,
+    ul,
+    li {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    div {
+        width: 958px;
+        margin: 0 auto;
+        padding-left: 2px;
+    }
+
+    li.hz-line {
+        padding-bottom: 12px;
+    }
+
+    li.hz-line span {
+        display: inline-block;
+        font-family: "嗡阿吽－田英章钢笔楷书简", "楷体", "楷体_gb2312", "Kaiti SC", STKaiti, "AR PL UKai CN", "AR PL UKai HK", "AR PL UKai TW", "AR PL UKai TW MBE", "AR PL KaitiM GB", KaiTi, KaiTi_GB2312, DFKai-SB, "TW\-Kai";
+        font-size: 58px;
+        line-height: 85px;
+        text-align: center;
+        width: 80px;
+        height: 80px;
+        background: url(../img/bg11.svg) left center no-repeat;
+        color: rgba(224, 6, 6, 0.5);
+        margin-left: -2px;
+        margin-top: -2px
+    }
+
+    li.teach-line {
+        display: block;
+        width: 938px;
+        height: 49px;
+        font-family: "hy-py", "嗡阿吽－田英章钢笔楷书简", "楷体", "楷体_gb2312", "Kaiti SC", STKaiti, "AR PL UKai CN", "AR PL UKai HK", "AR PL UKai TW", "AR PL UKai TW MBE", "AR PL KaitiM GB", KaiTi, KaiTi_GB2312, DFKai-SB, "TW\-Kai";
+        font-size: 25px;
+        text-align: left;
+        /* background: url(../img/xb1.svg) left center repeat-x; */
+        color: #980f29;
+        margin-top: 12px;
+    }
+
+    li.teach-line span {
+        display: inline-block;
+        width: 26px;
+        height: 48px;
+        text-align: center;
+        line-height: 55px;
+    }
+
+    li.teach-line span.teach-line-hz {
+        width: 40px;
+        font-size: 32px;
+        text-align: center
+    }
+
+    li.teach-line span.teach-line-py {
+        min-width: 40px;
+        margin-right: 10px;
+    }
+
+    li.teach-line span.teach-line-bs {}
+
+    li span.svg {
+        line-height: 71px;
+    }
+
+    li svg {
+        vertical-align: middle;
+    }
+
+    li.hz-line span.b {
+        color: rgba(224, 6, 6, 0.5);
+    }
+
+    .afterpage {
+        page-break-before: always;
+    }
+
+    .page-head {
+        height: 116px;
+        line-height: 136px;
+        font-size: 32px;
+        text-align: center;
+        display: none;
+        color: #70d39d
+    }
+
+    #overlay {
+        position: fixed;
+        display: none;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    @media print {
+        .afterpage {
+            page-break-before: always;
+        }
+        .page-head {
+            display: block
+        }
+    }
+
+    @page {
+        size: auto;
+        margin: 5mm 16mm 5mm 16mm;
+    }
+
+    table {
+        table-layout: fixed;
+    }
+
+    .table th {
+        width: auto ! important;
+    }
+
+    .slider-horizontal {
+        width: 100% ! important;
+    }
+
+    .tooltip-inner {
+        width: fit-content;
+    }
